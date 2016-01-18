@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'LateralTools_Example', :exclusive => true do
+  pod "LateralTools", :path => "../"
+end
+
+target 'LateralTools_Tests', :exclusive => true do
+  pod "LateralTools", :path => "../"
+
+  
+end
