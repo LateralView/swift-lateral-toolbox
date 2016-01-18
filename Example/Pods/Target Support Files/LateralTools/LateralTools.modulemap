@@ -1,0 +1,6 @@
+framework module LateralTools {
+  umbrella header "LateralTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,14 @@
+PODS:
+  - LateralTools (0.1.0)
+
+DEPENDENCIES:
+  - LateralTools (from `../`)
+
+EXTERNAL SOURCES:
+  LateralTools:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LateralTools: eba2726db23b8e0997eea475dbbdebbfd19d10d9
+
+COCOAPODS: 0.39.0

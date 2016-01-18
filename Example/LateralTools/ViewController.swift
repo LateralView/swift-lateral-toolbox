@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import LateralTools
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.sarasa()
     }
 
     override func didReceiveMemoryWarning() {
