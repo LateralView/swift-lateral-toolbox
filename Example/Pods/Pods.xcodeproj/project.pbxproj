@@ -13,6 +13,8 @@
 		40C1D6CF83E8B46B2F244D740CE06B16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		4CE15F22D5E221F60DE95EDC3F8F2C18 /* LateralTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41CE0FE68805909CF08D00A3E4A3B8A8 /* LateralTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5044B54BBF9802105710FAA0B35DBA9E /* Pods-LateralTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF550AB54DB4D837FF163ED613B6EF3 /* Pods-LateralTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83292EF71C4D67D300DF97D5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83292EF61C4D67D300DF97D5 /* UIColor.swift */; };
+		83292EF91C4D689E00DF97D5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83292EF81C4D689E00DF97D5 /* String.swift */; };
 		838BE83C1C4D623E009744B1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838BE83B1C4D623E009744B1 /* UIImage.swift */; };
 		838BE83E1C4D6291009744B1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838BE83D1C4D6291009744B1 /* UIView.swift */; };
 		961F66B794844F03131F3178D59523C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -66,6 +68,8 @@
 		4535C9C6C94006D9467601A04E19D280 /* Pods-LateralTools_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LateralTools_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		4EC62A28FA5B68A2417FC0B10668F8C4 /* Pods_LateralTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LateralTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7017F1BDEC43C2E1258B6CE8F5A87117 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83292EF61C4D67D300DF97D5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		83292EF81C4D689E00DF97D5 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		838BE83B1C4D623E009744B1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		838BE83D1C4D6291009744B1 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		849096EBD5B83AE282B5FFD65A40BDB3 /* Pods-LateralTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LateralTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			children = (
 				838BE83B1C4D623E009744B1 /* UIImage.swift */,
 				838BE83D1C4D6291009744B1 /* UIView.swift */,
+				83292EF61C4D67D300DF97D5 /* UIColor.swift */,
+				83292EF81C4D689E00DF97D5 /* String.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -420,6 +426,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				25BD89D9FF038C19C0D5DCC4FE64A92C /* LateralTools-dummy.m in Sources */,
+				83292EF71C4D67D300DF97D5 /* UIColor.swift in Sources */,
+				83292EF91C4D689E00DF97D5 /* String.swift in Sources */,
 				838BE83C1C4D623E009744B1 /* UIImage.swift in Sources */,
 				838BE83E1C4D6291009744B1 /* UIView.swift in Sources */,
 			);

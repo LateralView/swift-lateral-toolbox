@@ -6,9 +6,10 @@
 //
 //
 
-import Foundation
+import UIKit
 
-extension UIImage {
+extension UIImage
+{
     
     public func toBase64EncodedJPEG(quality: Float = 0.8) -> String?
     {
@@ -19,5 +20,15 @@ extension UIImage {
             return nil
         }
     }
-    
+
+    public func toBase64EncodedPNG() -> String?
+    {
+        if let imageData = UIImagePNGRepresentation(self) {
+            let encodedData = imageData.base64EncodedDataWithOptions([.Encoding64CharacterLineLength])
+            return String(data: encodedData, encoding: NSUTF8StringEncoding)
+        } else {
+            return nil
+        }
+    }
+
 }
