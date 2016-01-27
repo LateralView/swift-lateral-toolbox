@@ -11,11 +11,23 @@ import Foundation
 extension String
 {
     
-    public func trim() -> String {
-        return self.stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: " "))
+    subscript (i: Int) -> Character {
+        return self[self.startIndex.advancedBy(i)]
     }
     
-    public func randomAlphaNumericString(length: Int) -> String
+    subscript (i: Int) -> String {
+        return String(self[i] as Character)
+    }
+    
+    subscript (r: Range<Int>) -> String {
+        return substringWithRange(Range(start: startIndex.advancedBy(r.startIndex), end: startIndex.advancedBy(r.endIndex)))
+    }
+    
+    func trim () -> String {
+        return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    }
+    
+    public func randomAlphanumericString(length: Int) -> String
     {
         // from: http://stackoverflow.com/a/33860834
         let allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"

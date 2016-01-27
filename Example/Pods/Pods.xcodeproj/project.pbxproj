@@ -17,6 +17,7 @@
 		83292EF91C4D689E00DF97D5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83292EF81C4D689E00DF97D5 /* String.swift */; };
 		838BE83C1C4D623E009744B1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838BE83B1C4D623E009744B1 /* UIImage.swift */; };
 		838BE83E1C4D6291009744B1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838BE83D1C4D6291009744B1 /* UIView.swift */; };
+		83A48E7B1C590FF5000390C3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A48E7A1C590FF5000390C3 /* UIViewController.swift */; };
 		961F66B794844F03131F3178D59523C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		A166989F3E2E945FE32209D781ECA83C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		A8B05289B08039D7A0CD5549A3F78BD3 /* Pods-LateralTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2732B8DF0A8AF9FAAA500D370BEE09CD /* Pods-LateralTools_Tests-dummy.m */; };
@@ -72,6 +73,7 @@
 		83292EF81C4D689E00DF97D5 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		838BE83B1C4D623E009744B1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		838BE83D1C4D6291009744B1 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		83A48E7A1C590FF5000390C3 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		849096EBD5B83AE282B5FFD65A40BDB3 /* Pods-LateralTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LateralTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8DC8002165ED88FFBAD12EB777BA12C1 /* Pods-LateralTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LateralTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8DE4423B5AB3619ACC02280B9396D84A /* Pods-LateralTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LateralTools_Example.modulemap"; sourceTree = "<group>"; };
@@ -124,10 +126,7 @@
 		0FC93F0B58FCDF67AB61B82058ECA8A7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				838BE83B1C4D623E009744B1 /* UIImage.swift */,
-				838BE83D1C4D6291009744B1 /* UIView.swift */,
-				83292EF61C4D67D300DF97D5 /* UIColor.swift */,
-				83292EF81C4D689E00DF97D5 /* String.swift */,
+				83A48E791C590FDC000390C3 /* Extensions */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -205,6 +204,18 @@
 				5E3C8D52AD44A5371419A210ED71F522 /* Products */,
 				68628E91921C90D02C818E310A675BBC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		83A48E791C590FDC000390C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				838BE83B1C4D623E009744B1 /* UIImage.swift */,
+				838BE83D1C4D6291009744B1 /* UIView.swift */,
+				83292EF61C4D67D300DF97D5 /* UIColor.swift */,
+				83292EF81C4D689E00DF97D5 /* String.swift */,
+				83A48E7A1C590FF5000390C3 /* UIViewController.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		922647527CC12766ECF7875DD3EA523B /* Development Pods */ = {
@@ -427,6 +438,7 @@
 			files = (
 				25BD89D9FF038C19C0D5DCC4FE64A92C /* LateralTools-dummy.m in Sources */,
 				83292EF71C4D67D300DF97D5 /* UIColor.swift in Sources */,
+				83A48E7B1C590FF5000390C3 /* UIViewController.swift in Sources */,
 				83292EF91C4D689E00DF97D5 /* String.swift in Sources */,
 				838BE83C1C4D623E009744B1 /* UIImage.swift in Sources */,
 				838BE83E1C4D6291009744B1 /* UIView.swift in Sources */,
