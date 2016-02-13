@@ -11,10 +11,33 @@ import LateralTools
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var progressIndicator: UILabel!
+    @IBOutlet weak var radialProgressView: LvRadialProgressView!
+    
+    private var timer: NSTimer!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        radialProgressView.minValue = 0
+        radialProgressView.maxValue = 100
+        radialProgressView.progressValue = 0
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.2,
+            target: self,
+            selector: "tick",
+            userInfo: nil,
+            repeats: true
+        )
                 
     }
+    
+    func tick()
+    {
+        let value = radialProgressView.progressValue + 1
+        radialProgressView.progressValue = value
+        progressIndicator.text = "\(value)%"
+    }
+    
 
 }
 

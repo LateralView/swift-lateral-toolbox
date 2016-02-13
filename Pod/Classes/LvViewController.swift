@@ -8,16 +8,16 @@
 
 import UIKit
 
-class LvViewController: UIViewController
+public class LvViewController: UIViewController
 {
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint?
     
-    override func viewWillAppear(animated: Bool) {
+    override public func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.startObservingKeyboardEvents()
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override public func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         self.stopObservingKeyboardEvents()
     }
