@@ -13,19 +13,19 @@ public class LvRadialProgressView: UIView
     
     public var progressValue   : Double = 0.5 {
         didSet {
-            self.setNeedsDisplay()
+            self.updateValues()
         }
     }
     
     public var minValue        : Double = 0 {
         didSet {
-            self.setNeedsDisplay()
+            self.updateValues()
         }
     }
     
     public var maxValue        : Double = 1 {
         didSet {
-            self.setNeedsDisplay()
+            self.updateValues()
         }
     }
     
@@ -35,7 +35,17 @@ public class LvRadialProgressView: UIView
         }
     }
     
-//    var fillColor       : UIColor = UIColor.blackColor()
+    public var traceColor       : UIColor = UIColor.grayColor() {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+
+    public var lineColor       : UIColor = UIColor.blackColor() {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
 
     override public func drawRect(rect: CGRect)
     {
@@ -44,19 +54,46 @@ public class LvRadialProgressView: UIView
         let endAngle : CGFloat = CGFloat(startAngle) + CGFloat(M_PI * 2)
         let percent = CGFloat((progressValue - minValue) / (maxValue - minValue))
         
-        let path = UIBezierPath()
-        path.lineWidth = CGFloat(self.lineWidth)
+        // trace
+        let tracePath = UIBezierPath()
+        tracePath.lineWidth = CGFloat(self.lineWidth)
 
-        path.addArcWithCenter(center,
-            radius: (rect.size.width / 2) - path.lineWidth,
+        tracePath.addArcWithCenter(center,
+            radius: (rect.size.width / 2) - tracePath.lineWidth,
+            startAngle: startAngle,
+            endAngle: endAngle,
+            clockwise: true
+        )
+        
+        self.traceColor.setStroke()
+        tracePath.stroke()
+
+        // line
+        let linePath = UIBezierPath()
+        linePath.lineWidth = CGFloat(self.lineWidth)
+
+        linePath.addArcWithCenter(center,
+            radius: (rect.size.width / 2) - linePath.lineWidth,
             startAngle: startAngle,
             endAngle: (endAngle - startAngle) * percent + startAngle,
             clockwise: true
         )
         
-        UIColor.redColor().setStroke()
-        UIColor.greenColor().setFill()
-        path.stroke()
+        self.lineColor.setStroke()
+        linePath.stroke()
+    }
+    
+    private func updateValues()
+    {
+        if (progressValue > maxValue) {
+            progressValue = maxValue
+        }
+        
+        if (progressValue < minValue) {
+            progressValue = minValue
+        }
+        
+        self.setNeedsDisplay()
     }
     
 }
