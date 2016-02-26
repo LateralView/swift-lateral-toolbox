@@ -1,4 +1,4 @@
-# LateralTools
+# swift-lateral-toolbox:
 
 ## Usage
 
@@ -8,11 +8,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-LateralTools is available through [CocoaPods](http://cocoapods.org). To install
+swift-lateral-toolbox is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'LateralTools', :git => 'https://github.com/LateralView/LateralTools.git'
+pod 'LateralTools', :git => 'https://github.com/LateralView/swift-lateral-toolbox.git'
 ```
 
 ## License
