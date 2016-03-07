@@ -1,12 +1,15 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'LateralTools_Example', :exclusive => true do
-  pod "LateralTools", :path => "../"
+target 'swift-lateral-toolbox_Example', :exclusive => true do
+  pod 'swift-lateral-toolbox', :path => '../'
 end
 
-target 'LateralTools_Tests', :exclusive => true do
-  pod "LateralTools", :path => "../"
+target 'swift-lateral-toolbox_Tests', :exclusive => true do
+  pod 'swift-lateral-toolbox', :path => '../'
 
-  
+  pod 'Quick', '~> 0.8.0'
+  pod 'Nimble', '3.0.0'
+  pod 'FBSnapshotTestCase'
+  pod 'Nimble-Snapshots'
 end

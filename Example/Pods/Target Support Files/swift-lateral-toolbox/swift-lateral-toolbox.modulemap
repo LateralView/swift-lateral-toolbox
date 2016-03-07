@@ -1,0 +1,6 @@
+framework module swift_lateral_toolbox {
+  umbrella header "swift-lateral-toolbox-umbrella.h"
+
+  export *
+  module * { export * }
+}
