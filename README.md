@@ -17,7 +17,7 @@ swift-lateral-toolbox is available through [CocoaPods](http://cocoapods.org). To
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "swift-lateral-toolbox"
+pod 'swift-lateral-toolbox', :git => 'https://github.com/LateralView/swift-lateral-toolbox.git'
 ```
 
 ## Author
