@@ -9,7 +9,7 @@
 import UIKit
 import swift_lateral_toolbox
 
-class ViewController: UIViewController {
+class ViewController: LvViewController {
 
     @IBOutlet weak var progressIndicator: UILabel!
     @IBOutlet weak var radialProgressView: LvRadialProgressView!
@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.hidesKeyboardOnTap = true
+        
         radialProgressView.minValue = 0
         radialProgressView.maxValue = 100
         radialProgressView.progressValue = 0

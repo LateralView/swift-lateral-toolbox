@@ -12,6 +12,31 @@ public class LvViewController: UIViewController
 {
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint?
     
+    public var hidesKeyboardOnTap: Bool = false {
+        didSet {
+            
+            guard let tapGestureRecognizer = self.tapGestureRecognizer else {
+                return
+            }
+            
+            if hidesKeyboardOnTap {
+                self.view.addGestureRecognizer(tapGestureRecognizer)
+            } else {
+                self.view.removeGestureRecognizer(tapGestureRecognizer)
+            }
+            
+        }
+    }
+    
+    private var tapGestureRecognizer: UITapGestureRecognizer?
+    
+    // MARK: Overriden methods
+
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        tapGestureRecognizer = UITapGestureRecognizer(target: self.view, action: Selector("endEditing:"))
+    }
+    
     override public func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.startObservingKeyboardEvents()
@@ -21,7 +46,20 @@ public class LvViewController: UIViewController
         super.viewWillDisappear(animated)
         self.stopObservingKeyboardEvents()
     }
- 
+    
+    // MARK: Public methods
+
+    func keyboardWillShowNotification(notification: NSNotification) {
+        updateBottomLayoutConstraintWithNotification(notification)
+    }
+    
+    func keyboardWillHideNotification(notification: NSNotification) {
+        updateBottomLayoutConstraintWithNotification(notification)
+    }
+    
+    
+    // MARK: Private methods
+    
     private func startObservingKeyboardEvents() {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowNotification:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
@@ -31,15 +69,7 @@ public class LvViewController: UIViewController
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
     }
-    
-    func keyboardWillShowNotification(notification: NSNotification) {
-        updateBottomLayoutConstraintWithNotification(notification)
-    }
-    
-    func keyboardWillHideNotification(notification: NSNotification) {
-        updateBottomLayoutConstraintWithNotification(notification)
-    }
-    
+
     private func updateBottomLayoutConstraintWithNotification(notification: NSNotification)
     {
         if let constraint = self.bottomConstraint
