@@ -1,15 +1,8 @@
 # swift-lateral-toolbox
 
-[![CI Status](http://img.shields.io/travis/Leandro Tami/swift-lateral-toolbox.svg?style=flat)](https://travis-ci.org/Leandro Tami/swift-lateral-toolbox)
-[![Version](https://img.shields.io/cocoapods/v/swift-lateral-toolbox.svg?style=flat)](http://cocoapods.org/pods/swift-lateral-toolbox)
-[![License](https://img.shields.io/cocoapods/l/swift-lateral-toolbox.svg?style=flat)](http://cocoapods.org/pods/swift-lateral-toolbox)
-[![Platform](https://img.shields.io/cocoapods/p/swift-lateral-toolbox.svg?style=flat)](http://cocoapods.org/pods/swift-lateral-toolbox)
+This pod contains classes and extensions with utility methods and UI controls that will make your development process easier and safer. Fully developed in Swift and tested, it also includes an example app. 
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+The Toolbox is constantly being improved and updated since we use it daily at [Lateral View](https://lateralview.co/) for our own projects.
 
 ## Installation
 
@@ -20,10 +13,35 @@ it, simply add the following line to your Podfile:
 pod 'swift-lateral-toolbox', :git => 'https://github.com/LateralView/swift-lateral-toolbox.git'
 ```
 
-## Author
+## What's in the box?
 
-Leandro Tami, leandro@lateralview.net
+### Extensions
 
-## License
+* **String**
+	* Generate random alphanumeric strings
+	* Access characters using subscripts
+	* Validate email addresses
+* **UIColor**
+	* Generate a 1-pixel UIImage with a specified color
+* **UIImage**
+	* Export to JPEG or PNG using a Base64 representation
+* **UIView**
+	* Create a UIImage snapshot (screen capture) of a view and its subviews
+* **UIViewController**
+	* Present alerts with just one line of code
 
-swift-lateral-toolbox is available under the MIT license. See the LICENSE file for more info.
+### Classes
+
+* **LvRadialProgressView**
+	* Display the progress of an ongoing task using a circular progress bar
+* **LvViewController**
+	* Makes your content aware of the presence of the keyboard and automatically adjusts its bottom constraint
+	* Hide the keyboard whenever the user taps outside a control
+
+## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Authors and license
+
+swift-lateral-toolbox was developed by the iOS team of [Lateral View](https://lateralview.co/). It is freely available under the MIT license.
