@@ -23,7 +23,7 @@ extension String
         return substringWithRange(Range(start: startIndex.advancedBy(r.startIndex), end: startIndex.advancedBy(r.endIndex)))
     }
     
-    func trim () -> String {
+    public func trim () -> String {
         return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
     }
     
@@ -39,6 +39,23 @@ extension String
             randomString += String(newCharacter)
         }
         return randomString
+    }
+    
+    public func isValidEmailAddress() -> Bool
+    {
+        // from: http://www.ios-blog.co.uk/tutorials/objective-c/objective-c-validate-e-mail-address/
+        guard self.characters.count > 0 else {
+            return false
+        }
+        
+        let regexStr = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        do {
+            let regex = try NSRegularExpression(pattern: regexStr, options: .CaseInsensitive)
+            let matches = regex.numberOfMatchesInString(self, options: [], range: NSMakeRange(0, self.characters.count))
+            return matches > 0
+        } catch {
+            return false
+        }        
     }
     
 }

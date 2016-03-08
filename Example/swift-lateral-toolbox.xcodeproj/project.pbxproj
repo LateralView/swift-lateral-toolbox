@@ -11,7 +11,7 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		830488F11C8F1E96006CDBFA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830488F01C8F1E96006CDBFA /* String.swift */; };
 		83595CB11C8A021F0028A890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83595CB01C8A021F0028A890 /* ViewController.swift */; };
 		8A20FF432DF4325AD2828947 /* Pods_swift_lateral_toolbox_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0079D9D71CF3C8E86298CC9 /* Pods_swift_lateral_toolbox_Tests.framework */; };
 		C353331094A002BE637D5BB3 /* Pods_swift_lateral_toolbox_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0C2D55B1CAC1CDB7C810B /* Pods_swift_lateral_toolbox_Example.framework */; };
@@ -39,7 +39,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* swift-lateral-toolbox_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-lateral-toolbox_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		830488F01C8F1E96006CDBFA /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		83595CB01C8A021F0028A890 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89F6E822C95EFC0C9A86D04F /* Pods-swift-lateral-toolbox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-lateral-toolbox_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-lateral-toolbox_Tests/Pods-swift-lateral-toolbox_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		943C3983455D105E41C32303 /* Pods-swift-lateral-toolbox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-lateral-toolbox_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-lateral-toolbox_Tests/Pods-swift-lateral-toolbox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,8 +135,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				830488F01C8F1E96006CDBFA /* String.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -368,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				830488F11C8F1E96006CDBFA /* String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
