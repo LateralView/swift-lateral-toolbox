@@ -2,39 +2,39 @@ import Quick
 import Nimble
 import swift_lateral_toolbox
 
-class String: QuickSpec {
+class StringSpec: QuickSpec {
     
     override func spec() {
 
-        context("email address") {
+        describe("email address") {
             
-            describe("should fail") {
+            context("invalid email") {
                 
-                it("empty email") {
+                it("fails if empty") {
                     expect("".isValidEmailAddress()) == false
                 }
                 
-                it("email without domain") {
+                it("fails if domain is missing") {
                     expect("name@domain".isValidEmailAddress()) == false
                 }
                 
-                it("email without user") {
+                it("fails if user is missing") {
                     expect("@domain.com".isValidEmailAddress()) == false
                 }
                 
-                it("email with invalid characters") {
+                it("fails if contains invalid characters") {
                     expect("@domain.com".isValidEmailAddress()) == false
                 }
                 
             }
             
-            describe("should pass") {
+            context("valid email") {
                 
-                it("valid email") {
+                it("passes with standard case") {
                     expect("name@domain.com".isValidEmailAddress()) == true
                 }
                 
-                it("email with dots, dashes and underscores") {
+                it("passes if contains dots, dashes or underscores") {
                     expect("my.name-last_name@domain.com".isValidEmailAddress()) == true
                 }
                 
