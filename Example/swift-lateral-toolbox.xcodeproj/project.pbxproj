@@ -14,6 +14,7 @@
 		830488F11C8F1E96006CDBFA /* StringSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830488F01C8F1E96006CDBFA /* StringSpec.swift */; };
 		831B1D121C90704F0034EF7E /* UIColorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B1D111C90704F0034EF7E /* UIColorSpec.swift */; };
 		83595CB11C8A021F0028A890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83595CB01C8A021F0028A890 /* ViewController.swift */; };
+		83D983E91C91B870004C5841 /* NSDateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D983E81C91B870004C5841 /* NSDateSpec.swift */; };
 		8A20FF432DF4325AD2828947 /* Pods_swift_lateral_toolbox_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0079D9D71CF3C8E86298CC9 /* Pods_swift_lateral_toolbox_Tests.framework */; };
 		C353331094A002BE637D5BB3 /* Pods_swift_lateral_toolbox_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0C2D55B1CAC1CDB7C810B /* Pods_swift_lateral_toolbox_Example.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		830488F01C8F1E96006CDBFA /* StringSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringSpec.swift; sourceTree = "<group>"; };
 		831B1D111C90704F0034EF7E /* UIColorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorSpec.swift; sourceTree = "<group>"; };
 		83595CB01C8A021F0028A890 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83D983E81C91B870004C5841 /* NSDateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateSpec.swift; sourceTree = "<group>"; };
 		89F6E822C95EFC0C9A86D04F /* Pods-swift-lateral-toolbox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-lateral-toolbox_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-lateral-toolbox_Tests/Pods-swift-lateral-toolbox_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		943C3983455D105E41C32303 /* Pods-swift-lateral-toolbox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-lateral-toolbox_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-lateral-toolbox_Tests/Pods-swift-lateral-toolbox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		98A693390552FFC016BF6BC1 /* Pods-swift-lateral-toolbox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-lateral-toolbox_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-lateral-toolbox_Example/Pods-swift-lateral-toolbox_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				830488F01C8F1E96006CDBFA /* StringSpec.swift */,
 				831B1D111C90704F0034EF7E /* UIColorSpec.swift */,
+				83D983E81C91B870004C5841 /* NSDateSpec.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D983E91C91B870004C5841 /* NSDateSpec.swift in Sources */,
 				830488F11C8F1E96006CDBFA /* StringSpec.swift in Sources */,
 				831B1D121C90704F0034EF7E /* UIColorSpec.swift in Sources */,
 			);

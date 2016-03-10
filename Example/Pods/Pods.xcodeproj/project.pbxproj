@@ -80,6 +80,9 @@
 		83595CBE1C8A15050028A890 /* LvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83595CA21C8A01AF0028A890 /* LvViewController.swift */; };
 		83595CBF1C8A15060028A890 /* LvRadialProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83595CA11C8A01AF0028A890 /* LvRadialProgressView.swift */; };
 		83595CC01C8A15060028A890 /* LvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83595CA21C8A01AF0028A890 /* LvViewController.swift */; };
+		83D983E71C91B840004C5841 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D983E61C91B840004C5841 /* NSDate.swift */; };
+		83D983EA1C91EA05004C5841 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D983E61C91B840004C5841 /* NSDate.swift */; };
+		83D983EB1C91EA06004C5841 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D983E61C91B840004C5841 /* NSDate.swift */; };
 		86DABE920F2113B8D96ED9E8C76390C1 /* HaveValidSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CDFD38206302BDD75F4CF1998D5DD4 /* HaveValidSnapshot.swift */; };
 		87165912578E674C9409A621A0FF21FF /* World+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4953F6E7D2BA1C72B639CC7D9A5EB9 /* World+DSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8D0BF52FF564A170A3D1DE28C27B233E /* Poll.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA329B2CFA87E526DA6452FDD6BB26BC /* Poll.swift */; };
@@ -299,6 +302,7 @@
 		83595CA51C8A01AF0028A890 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		83595CA61C8A01AF0028A890 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		83595CA71C8A01AF0028A890 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		83D983E61C91B840004C5841 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		85F1677A800F83178BA55553EE720E8E /* Pods-swift-lateral-toolbox_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swift-lateral-toolbox_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8698EF516FECBC40F0097FA3C0DEB933 /* Pods-swift-lateral-toolbox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-lateral-toolbox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		88173E567CC86EE017DEE8E5E16DD71A /* Pods-swift-lateral-toolbox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-lateral-toolbox_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -606,6 +610,7 @@
 				83595CA51C8A01AF0028A890 /* UIImage.swift */,
 				83595CA61C8A01AF0028A890 /* UIView.swift */,
 				83595CA71C8A01AF0028A890 /* UIViewController.swift */,
+				83D983E61C91B840004C5841 /* NSDate.swift */,
 			);
 			name = Extensions;
 			path = Classes;
@@ -1101,6 +1106,7 @@
 				35848D70EAC9237246BDF63457729694 /* FBSnapshotTestCase.m in Sources */,
 				83595CA81C8A01AF0028A890 /* LvRadialProgressView.swift in Sources */,
 				5D14695A69EC4A8DF7488D0FC59C105C /* FBSnapshotTestCasePlatform.m in Sources */,
+				83D983E71C91B840004C5841 /* NSDate.swift in Sources */,
 				AA8501741ABB8D75C6C47DE086BACD37 /* FBSnapshotTestController.m in Sources */,
 				52F7A46AB0053D8BB1D793B917D37BB2 /* SwiftSupport.swift in Sources */,
 				83595CA91C8A01AF0028A890 /* LvViewController.swift in Sources */,
@@ -1121,6 +1127,7 @@
 				83595CBD1C8A15050028A890 /* LvRadialProgressView.swift in Sources */,
 				83595CBE1C8A15050028A890 /* LvViewController.swift in Sources */,
 				83595CB31C8A14F50028A890 /* String.swift in Sources */,
+				83D983EA1C91EA05004C5841 /* NSDate.swift in Sources */,
 				83595CB81C8A14FB0028A890 /* UIViewController.swift in Sources */,
 				83595CB61C8A14FB0028A890 /* UIImage.swift in Sources */,
 				83595CB51C8A14FB0028A890 /* UIColor.swift in Sources */,
@@ -1138,6 +1145,7 @@
 				83595CB41C8A14F70028A890 /* String.swift in Sources */,
 				83595CB91C8A14FC0028A890 /* UIColor.swift in Sources */,
 				83595CC01C8A15060028A890 /* LvViewController.swift in Sources */,
+				83D983EB1C91EA06004C5841 /* NSDate.swift in Sources */,
 				83595CBC1C8A14FC0028A890 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
