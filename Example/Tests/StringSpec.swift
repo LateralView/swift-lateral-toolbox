@@ -6,6 +6,29 @@ class StringSpec: QuickSpec {
     
     override func spec() {
 
+        describe("url encoding") {
+            
+            let encodedText = "%C2%A1Hola!%20%C2%BFC%C3%B3mo%20te%20va%3F"
+            let decodedText = "¡Hola! ¿Cómo te va?"
+            
+            it("decodes successfully") {
+                if let text = encodedText.URLDecode {
+                    expect(text).to(equal(decodedText))
+                } else {
+                    fail()
+                }
+            }
+
+            it("encodes successfully") {
+                if let text = decodedText.URLEncode {
+                    expect(text).to(equal(encodedText))
+                } else {
+                    fail()
+                }
+            }
+
+        }
+
         describe("email address") {
             
             context("invalid email") {

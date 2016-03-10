@@ -302,6 +302,7 @@
 		83595CA51C8A01AF0028A890 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		83595CA61C8A01AF0028A890 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		83595CA71C8A01AF0028A890 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		83B2A7581C91FD33004A7386 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/lib/system/libcommonCrypto.tbd; sourceTree = DEVELOPER_DIR; };
 		83D983E61C91B840004C5841 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		85F1677A800F83178BA55553EE720E8E /* Pods-swift-lateral-toolbox_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swift-lateral-toolbox_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8698EF516FECBC40F0097FA3C0DEB933 /* Pods-swift-lateral-toolbox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-lateral-toolbox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -662,6 +663,7 @@
 		AF3FA1139EC69E065B1C1095C25B2636 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83B2A7581C91FD33004A7386 /* libcommonCrypto.tbd */,
 				9823197EA5904A9150FB0AD8B09841E6 /* FBSnapshotTestCase.framework */,
 				5AD55F3974939097556240403DEE2DFF /* Nimble.framework */,
 				8C36DB6F05615EC71278526272A72BAD /* Quick.framework */,
@@ -1426,6 +1428,10 @@
 			buildSettings = {
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "swift-lateral-toolbox";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1734,6 +1740,10 @@
 			buildSettings = {
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_NAME = "swift-lateral-toolbox";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

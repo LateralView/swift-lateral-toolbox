@@ -22,7 +22,15 @@ extension String
     subscript (r: Range<Int>) -> String {
         return substringWithRange(Range(start: startIndex.advancedBy(r.startIndex), end: startIndex.advancedBy(r.endIndex)))
     }
+        
+    public var URLEncode : String? {
+        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
+    }
     
+    public var URLDecode : String? {
+        return self.stringByRemovingPercentEncoding
+    }
+
     public func trim () -> String {
         return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
     }
