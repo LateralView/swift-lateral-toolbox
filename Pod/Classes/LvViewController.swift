@@ -34,7 +34,7 @@ public class LvViewController: UIViewController
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        tapGestureRecognizer = UITapGestureRecognizer(target: self.view, action: Selector("endEditing:"))
+        tapGestureRecognizer = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
     }
     
     override public func viewWillAppear(animated: Bool) {
@@ -61,8 +61,10 @@ public class LvViewController: UIViewController
     // MARK: Private methods
     
     private func startObservingKeyboardEvents() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShowNotification:", name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(LvViewController.keyboardWillShowNotification(_:)),
+                                                         name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(LvViewController.keyboardWillHideNotification(_:)),
+                                                         name: UIKeyboardWillHideNotification, object: nil)
     }
     
     private func stopObservingKeyboardEvents() {
