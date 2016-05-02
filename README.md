@@ -29,6 +29,11 @@ pod 'swift-lateral-toolbox', :git => 'https://github.com/LateralView/swift-later
 	* Create a UIImage snapshot (screen capture) of a view and its subviews
 * **UIViewController**
 	* Present alerts with just one line of code
+* **NSDate**
+	* Get date by adding days, hours and minutes.
+	* Comparison methods.
+	* Parse from string.
+	* Date to String function.
 
 ### Classes
 
