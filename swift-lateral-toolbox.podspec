@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "swift-lateral-toolbox"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "swift-lateral-toolbox is a collection of classes and extensions"
 
 # This description is used to generate tags and improve search results.
@@ -20,12 +20,12 @@ Pod::Spec.new do |s|
 This pod contains classes and extensions with utility methods and UI controls that will make your development process easier and safer.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/swift-lateral-toolbox"
+  s.homepage         = "https://github.com/lateralview/swift-lateral-toolbox"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Leandro Tami" => "leandro@lateralview.net" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/swift-lateral-toolbox.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/lateralview/swift-lateral-toolbox.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/lateralview'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
