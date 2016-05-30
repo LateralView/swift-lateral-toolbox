@@ -26,7 +26,7 @@ class ViewController: LvViewController {
         radialProgressView.progressValue = 0
         timer = NSTimer.scheduledTimerWithTimeInterval(0.2,
             target: self,
-            selector: "tick",
+            selector: #selector(ViewController.tick),
             userInfo: nil,
             repeats: true
         )
@@ -36,10 +36,12 @@ class ViewController: LvViewController {
     func tick()
     {
         let value = radialProgressView.progressValue + 1
-        radialProgressView.progressValue = value
-        progressIndicator.text = "\(value)%"
+        if value <= radialProgressView.maxValue {
+            radialProgressView.progressValue = value
+            progressIndicator.text = "\(value)%"
+
+        }
     }
-    
 
 }
 
