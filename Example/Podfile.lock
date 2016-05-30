@@ -1,20 +1,10 @@
 PODS:
-  - FBSnapshotTestCase (2.1.0):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.0)
-  - FBSnapshotTestCase/Core (2.1.0)
-  - FBSnapshotTestCase/SwiftSupport (2.1.0):
-    - FBSnapshotTestCase/Core
-  - Nimble (3.0.0)
-  - Nimble-Snapshots (4.0.1):
-    - FBSnapshotTestCase (~> 2.0)
-    - Nimble
-    - Quick
+  - Nimble (4.0.0)
   - Quick (0.8.0)
   - swift-lateral-toolbox (0.1.0)
 
 DEPENDENCIES:
-  - Nimble (= 3.0.0)
-  - Nimble-Snapshots
+  - Nimble (= 4.0.0)
   - Quick (~> 0.8.0)
   - swift-lateral-toolbox (from `../`)
 
@@ -23,10 +13,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Nimble-Snapshots: 2d15a585b816f7d14947ed6e172218f9d0980ea8
+  Nimble: 72bcc3e2f02242e6bfaaf8d9412ca7bfe3d8b417
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  swift-lateral-toolbox: 0f6c76bab84e1c68501a18c8b7dbc9e76014c61e
+  swift-lateral-toolbox: b62124168bdcdc6a5d8a455cc04f72459f00b387
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 2899bbbf780c49a677a22e967220dbea065a7744
+
+COCOAPODS: 1.0.0

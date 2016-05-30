@@ -1,8 +1,8 @@
 {
   "name": "swift-lateral-toolbox",
   "version": "0.1.0",
-  "summary": "A short description of swift-lateral-toolbox.",
-  "description": "",
+  "summary": "swift-lateral-toolbox is a collection of classes and extensions",
+  "description": "This pod contains classes and extensions with utility methods and UI controls that will make your development process easier and safer.",
   "homepage": "https://github.com/<GITHUB_USERNAME>/swift-lateral-toolbox",
   "license": "MIT",
   "authors": {
