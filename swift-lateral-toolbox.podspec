@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "swift-lateral-toolbox"
   s.version          = "0.1.0"
-  s.summary          = "A short description of swift-lateral-toolbox."
+  s.summary          = "swift-lateral-toolbox is a collection of classes and extensions"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+This pod contains classes and extensions with utility methods and UI controls that will make your development process easier and safer.
                        DESC
 
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/swift-lateral-toolbox"
