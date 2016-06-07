@@ -8,40 +8,58 @@
 
 import UIKit
 
+@IBDesignable
 public class LvRadialProgressView: UIView
 {
-    
-    public var progressValue   : Double = 0.5 {
+    /**
+     The current value of the progress bar
+     */
+    @IBInspectable public var progressValue   : Double = 0.5 {
         didSet {
             self.updateValues()
         }
     }
     
-    public var minValue        : Double = 0 {
+    /**
+     The lowest value in the interval of valid values
+     */
+    @IBInspectable public var minValue        : Double = 0 {
         didSet {
             self.updateValues()
         }
     }
     
-    public var maxValue        : Double = 1 {
+    /**
+     The highest value in the interval of valid values
+     */
+    @IBInspectable public var maxValue        : Double = 1 {
         didSet {
             self.updateValues()
         }
     }
     
-    public var lineWidth       : Double = 3 {
+    /**
+     Width of the radial progress bar line
+     */
+    @IBInspectable public var lineWidth       : Double = 3 {
         didSet {
             self.setNeedsDisplay()
         }
     }
     
-    public var traceColor       : UIColor = UIColor.grayColor() {
+    /**
+     Color of the foreground radial progress bar line
+     */
+    @IBInspectable public var lineColor       : UIColor = UIColor.blackColor() {
         didSet {
             self.setNeedsDisplay()
         }
     }
-
-    public var lineColor       : UIColor = UIColor.blackColor() {
+    
+    /**
+     Color of the background radial progress bar line
+     */
+    @IBInspectable public var traceColor       : UIColor = UIColor.grayColor() {
         didSet {
             self.setNeedsDisplay()
         }
